@@ -1,0 +1,36 @@
+{
+  "name": "socialmediadashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "chokidar": "^3.5.3",
+    "cssnano": "^6.0.1",
+    "dart-sass": "^1.25.0",
+    "glob-parent": "^6.0.2",
+    "glob-stream": "^8.0.0",
+    "glob-watcher": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "intellisense": "^0.0.1",
+    "npm": "^9.8.0",
+    "postcss": "^8.4.26",
+    "sass": "^1.63.6",
+    "vinyl-fs": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
