@@ -10,7 +10,7 @@ Use fieldset, legend, radio inputs -- https://www.accessibility-developer-guide.
 
 - Switching between light/dark mode (VIA JS, cause logicaly you need functionality)
 
-- Three toggling options: dark/light/default and Prefers-color-scheme media query -- to change the background color and text styling -- https://codepen.io/murlucker/pen/vYQRaxK
+- Three toggling options: dark/light/default and Prefers-color-scheme media query -- to change the background color and text styling -- https://codepen.io/renddrew/pen/bRomab
 
 CSS Variables (custom properties) -- https://css-tricks.com/updating-a-css-variable-with-javascript/
 
@@ -19,7 +19,6 @@ CSS Variables (custom properties) -- https://css-tricks.com/updating-a-css-varia
 
 3. It's a great practice to go through the project fully to mention each and every part that could be forseen otherwise. Try to mention each small detail that could be forgotten in the end, by adding it in the notes from the very start.
 
-4. Three toggling options -- https://codepen.io/renddrew/pen/bRomab
 
 Accessibility
 
