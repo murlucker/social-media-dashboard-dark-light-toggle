@@ -33,10 +33,25 @@
     }
 
     &--instagram {
-        border-top: rem(5) solid var(--instagram-start, --instagram-end);
+        position: relative;
+        overflow: hidden;
     }
 
+    &--instagram::before {
+        content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: rem(5);
+    background: linear-gradient(to right, var(--instagram-start), var(--instagram-end));
+    border-radius: rem(5);
+    background-clip: padding-box;
+    }
+
+
     &--youtube {
+        padding-top: rem(20);
         border-top: rem(5) solid var(--youtube);
     }
 
