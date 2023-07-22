@@ -7,7 +7,7 @@
     gap: rem(30);
 
     @include breakpoint(medium) {
-        grid-template-columns: repeat(2, 1fr);    
+        grid-template-columns: repeat(2, 1fr);
     }
 
     @include breakpoint(large) {
@@ -17,12 +17,13 @@
 
 
 .card {
+    position: relative;
+    overflow: hidden;
     background: var(--card-bg);
     color: var(--dark-text1);
-    text-align: center;
     padding: rem(25);
-    text-align: center;
     border-radius: rem(5);
+    text-align: center;
     transition: background 150ms ease-in-out;
     cursor: pointer;
 
@@ -39,22 +40,22 @@
     }
 
     &--instagram {
-        position: relative;
-        overflow: hidden;
-    }
+        padding-top: rem(30);
 
-    &--instagram::before {
-        content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: rem(5);
-    background: linear-gradient(to right, var(--instagram-start), var(--instagram-end));
-    border-radius: rem(5);
-    background-clip: padding-box;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: rem(5);
+            background: linear-gradient(225deg,
+                    var(--instagram-end),
+                    var(--instagram-middle) 50.91%,
+                    var(--instagram-start) 100%); // var(--instagram-start);
+        }
     }
-
 
     &--youtube {
         padding-top: rem(20);
@@ -77,14 +78,6 @@
 
     &__icon {
         margin-right: rem(8);
-
-        &--facebook {}
-
-        &--twitter {}
-
-        &--instagram {}
-
-        &--youtube {}
     }
 
     &__username {
@@ -109,7 +102,7 @@
             font-size: rem(56);
             margin-top: rem(20);
         }
-        
+
         &--small {
             font-size: rem(32);
         }
@@ -142,8 +135,4 @@
             margin-right: rem(4);
         }
     }
-
-    &__number {
-    }
-
 }
